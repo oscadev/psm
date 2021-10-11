@@ -1,0 +1,156 @@
+@font-face{
+  font-family: psn;
+  src: url('./media/SST-Light.woff')
+}
+.small-box-title{
+  font-family: psn;
+  font-weight: 500;
+  /* font-size: 1.09em; */
+}
+
+.bar-text{
+  font-family: psn;
+  font-weight: 200;
+  font-size: .8vw;
+  color: rgba(255, 255, 255, 0.854);
+}
+
+.small-box-title-2{
+  font-family: psn;
+  font-weight: 400;
+  font-size: 1vw;
+}
+
+.App {
+  position: absolute;
+  top: 50vh;
+  transform: translateY(-50%);
+  overflow: hidden;
+  text-align: center;
+  height: 56.25vw;
+  width: 100vw;
+  
+  
+  /* border: solid rgb(60, 255, 0) 1px; */
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animated.delay-5s {
+  animation-delay: .3s;
+}
+
+#video{
+  height: 56.25vw;
+  width: 100vw;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+}
+
+.top-icon{
+  height: 2.083333333333333vw;
+  width: 2.083333333333333vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  
+}
+
+.modal{
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100%;
+  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.842), rgba(31, 31, 31, 0.3));
+  top: 0;
+  z-index: 2;
+}
+
+.start-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 30%;
+  border: .3vw solid rgba(185, 217, 255, 0.815);
+  transition: 200ms ease-in-out;
+}
+
+.start-btn:hover{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  border: .3vw solid rgb(0, 115, 255);
+  transition: 200ms ease-in-out;
+  background-color: rgba(195, 195, 255, 0.315);
+}
+
+.menu-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom:10%;
+  /* width: 5vw; */
+  padding: 24px;
+  height: 3vw;
+  background-color: rgba(0, 255, 255, 0.075);
+  color: white;
+  cursor: pointer;
+  font-size: 1.5vw;
+  font-family: psn;
+
+}
+
+.menu-btn:hover{
+  transition: 100ms ease-in-out;
+  background-color: rgba(0, 255, 255, 0.432);
+}
+
+.tv-overlay{
+  top: 10%;
+  position: absolute;
+  width: 100vw;
+  z-index: 4;
+  height: -webkit-fill-available;
+  /* height: 100vw; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.App{
+  box-shadow: 0 0 10px 1px rgba(2, 0, 34, 0.651);
+}
