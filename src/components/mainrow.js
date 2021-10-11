@@ -88,7 +88,7 @@ export default class MainRow extends React.Component {
 
   keyPress = (e) => {
     if (e.key === "Enter" || e.key === " " || e.key === "Spacebar") {
-      alert("This is cannot play games. Menu demo only");
+      alert("This is cannot play games. Menu demo only... for now.");
     }
 
     if (e.key === "ArrowRight") {
